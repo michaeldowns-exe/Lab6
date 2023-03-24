@@ -26,6 +26,11 @@ def passEncode(userPass):
         encPass = encPass + str(int(char) + 3)
     return encPass
 
+def passDecode(userPass):
+    decPass = ''
+    for char in userPass:
+        decPass =  decPass + str(int(char) - 3)
+    return decPass
 
 
         
